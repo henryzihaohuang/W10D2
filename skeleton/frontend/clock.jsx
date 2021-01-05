@@ -39,9 +39,7 @@ export default class Clock extends React.Component {
                     {this.state.time.getSeconds()} </h2>
 
                 <h2>
-                    {this.state.date.getMonth()+1} 
-                    {this.state.date.getDate()},
-                    {this.state.date.getFullYear()}
+                    {this.state.date.toLocaleDateString()} 
                 </h2>
             </div>
 
