@@ -1,6 +1,6 @@
 div.clock{
     background-color: yellow;
-    border: 3px black solid;
+    border: 1px black solid;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -22,11 +22,35 @@ h2{
 
 div.tab{
     background-color: turquoise;
-    border: 3px solid blue;
-    padding: 100px;
-}
+    margin: 100px;
+    height:160px:
+    width:200px;
+}   
 
 ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
 }
+
+article {
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    border-bottom: 1px black solid;
+}
+
+div.tab h1{
+    border: 1px black solid;
+}
+
+div.tab h1.current{
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    border-top: 1px black solid;
+    border-bottom:0px;
+}
+
+li h1 {
+    font-size: 14px;
+}
+
+
