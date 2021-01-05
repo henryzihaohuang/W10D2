@@ -22,6 +22,11 @@ h2{
 
 div.tab{
     background-color: turquoise;
+    border: 3px solid blue;
+    padding: 100px;
+}
 
-
+ul{
+    display: flex;
+    justify-content: space-between;
 }
