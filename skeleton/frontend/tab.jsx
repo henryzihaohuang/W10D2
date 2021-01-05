@@ -8,11 +8,18 @@ export default class Tab extends React.Component{
     }
 
     render(){
-        const tab = this.props.tabs[this.state.currentTab];
+        const header = this.props.tabs.map = (el,idx) => {
+            if (idx === this.state.currentTab){
+                return <h1 className="current">{el.title}</h1>
+            } else {
+                return <h1>{el.title}</h1>
+            }
+        };
+        
         return (
-            <div>
-                <h1>{tab}</h1>
-                <div></div>
+            <div className="tab">
+                <header>{header}</header>
+                <article>{this.props.tabs[this.state.currentTab].content} </article>
             </div>
         )
     }

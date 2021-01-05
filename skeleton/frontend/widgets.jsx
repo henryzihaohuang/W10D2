@@ -8,6 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const root = document.getElementById("root");
 
-  ReactDOM.render(<Clock/>, root);
-  ReactDOM.render(<Tab />, root);
+  const tabArr = [{ title: "tab1", content: "I am the first tab" }, { title: "tab2", content: "I am the second pane" }, { 
+  title: "tab3", content: "I am the third tab"}]
+  
+
+  const widgets = [< Clock />, < Tab tabs = { tabArr } />]
+
+  ReactDOM.render(widgets, root);
 });
